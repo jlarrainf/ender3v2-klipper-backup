@@ -1,0 +1,218 @@
+-------------------- Log Start | Sat Jan 27 19:41:40 2024 --------------------
+data_path: /home/juani/printer_data
+is_default_data_path: False
+config_file: /home/juani/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: 5e70beb96c884906aab8dbdb2b4d1c6b
+unix_socket_path: /home/juani/printer_data/comms/moonraker.sock
+software_version: v0.8.0-206-g9ad8fed
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/juani/printer_data/logs/moonraker.log
+python_version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/juani/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager octoeverywhere]
+type = git_repo
+channel = beta
+path = /home/juani/octoeverywhere
+origin = https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere.git
+env = /home/juani/octoeverywhere-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+managed_services = 
+	octoeverywhere
+
+[announcements]
+subscriptions = 
+	octoeverywhere
+
+[update_manager mobileraker]
+type = git_repo
+path = /home/juani/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+primary_branch = main
+managed_services = mobileraker
+env = /home/juani/mobileraker-env/bin/python
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install-mobileraker-companion.sh
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+[file_manager]
+enable_object_processing = True
+
+#################################################################
+All Configuration Files:
+/home/juani/printer_data/config/moonraker.conf
+/home/juani/printer_data/config/octoeverywhere-system.cfg
+#################################################################
+Unsafe Shutdown Count: 9
+
+System Info:
+
+***python***
+  version: (3, 10, 12, 'final', 0)
+  version_string: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 3881120
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 28
+  manufacturer: Unknown
+  oem_id: 4245
+  product_name:      
+  product_revision: 0.1
+  serial_number: 0310c45e
+  manufacturer_date: 12/2016
+  capacity: 14.9 GiB
+  total_bytes: 16012804096
+
+***distribution***
+  name: Linux Mint 21.2
+  id: linuxmint
+  version: 21.2
+  version_parts: {'major': '21', 'minor': '2', 'build_number': ''}
+  like: ubuntu debian
+  codename: victoria
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+  mobileraker
+
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['network-online.target', '-.mount', 'sysinit.target', 'system.slice']
+**After=['network-online.target', 'basic.target', '-.mount', 'sysinit.target', 'system.slice', 'systemd-journald.socket']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/juani/printer_data/systemd/moonraker.env
+**ExecStart=/home/juani/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/juani/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=juani
+
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['-.mount', 'sysinit.target', 'system.slice', 'systemd-journald.socket', 'basic.target', 'network-online.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/juani/printer_data/systemd/klipper.env
+**ExecStart=/home/juani/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/juani/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=juani
+Git Repo moonraker: No warnings detected
+Git Repo klipper: Warnings detected:
+  Repo has untracked source files: ['klippy/extras/gcode_shell_command.py']
+Git Repo mainsail-config: No warnings detected
+Git Repo octoeverywhere: No warnings detected
+Git Repo mobileraker: No warnings detected
+Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
+Git Repo crowsnest: No warnings detected
+Klipper Version: v0.12.0-54-g6f686dde-dirty
+2024-01-27 16:41:40,262 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.100.42
+2024-01-27 17:34:04,140 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.100.42
+2024-01-27 18:44:09,312 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.100.42
+2024-01-27 19:10:41,274 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.100.42
