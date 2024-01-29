@@ -1594,3 +1594,405 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryCqRC9TLcQHHvf9
 2024-01-29 17:01:09,351 [application.py:log_request()] - 101 GET /websocket (192.168.100.42) [_TRUSTED_USER_] 1.17ms
 2024-01-29 17:01:09,351 [websockets.py:open()] - Websocket Opened: ID: 140675297420880, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0, Host Name: 192.168.100.42
 2024-01-29 17:01:09,359 [websockets.py:_handle_identify()] - Websocket 140675297420880 Client Identified - Name: mainsail, Version: 2.9.1, Type: web
+2024-01-29 17:02:34,163 [base_deploy.py:log_info()] - PackageKit: Detected 8 package updates:
+linux-generic
+linux-headers-generic
+linux-image-generic
+linux-headers-5.15.0-92
+linux-headers-5.15.0-92-generic
+linux-image-5.15.0-92-generic
+linux-modules-5.15.0-92-generic
+linux-modules-extra-5.15.0-92-generic
+2024-01-29 17:02:34,906 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker status --porcelain -b) successfully finished
+2024-01-29 17:02:34,971 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker branch --list --no-color) successfully finished
+2024-01-29 17:02:35,007 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker remote get-url origin) successfully finished
+2024-01-29 17:02:36,327 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker fetch origin --prune --progress) successfully finished
+2024-01-29 17:02:36,334 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-01-29 17:02:36,337 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker rev-parse HEAD) successfully finished
+2024-01-29 17:02:36,488 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:02:36,494 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker rev-parse origin/master) successfully finished
+2024-01-29 17:02:36,505 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:02:36,511 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/moonraker rev-list HEAD..61ea86033ab8a788a5f8d1d953667bad2bdb6d13 --count) successfully finished
+2024-01-29 17:02:36,512 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/juani/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 61ea86033ab8a788a5f8d1d953667bad2bdb6d13
+Upstream Commit SHA: 61ea86033ab8a788a5f8d1d953667bad2bdb6d13
+Current Version: v0.8.0-294-g61ea8603
+Upstream Version: v0.8.0-294-g61ea8603
+Rollback Commit: fb15b2a3de1ac203a8bf2a700b08c649d23cd4a0
+Rollback Branch: master
+Rollback Version: v0.8.0-204-gfb15b2a3
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-01-29 17:02:36,512 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2024-01-29 17:02:36,512 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
+2024-01-29 17:02:37,482 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper status --porcelain -b) successfully finished
+2024-01-29 17:02:37,492 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper branch --list --no-color) successfully finished
+2024-01-29 17:02:37,499 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper remote get-url origin) successfully finished
+2024-01-29 17:02:39,478 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper fetch origin --prune --progress) successfully finished
+2024-01-29 17:02:39,481 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-01-29 17:02:39,484 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper rev-parse HEAD) successfully finished
+2024-01-29 17:02:39,746 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:02:39,750 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper rev-parse origin/master) successfully finished
+2024-01-29 17:02:39,817 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:02:39,822 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/klipper rev-list HEAD..9f41f53c5e364694b9b41279b3b3aee34250b93a --count) successfully finished
+2024-01-29 17:02:39,823 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/juani/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 9f41f53c5e364694b9b41279b3b3aee34250b93a
+Upstream Commit SHA: 9f41f53c5e364694b9b41279b3b3aee34250b93a
+Current Version: v0.12.0-102-g9f41f53c
+Upstream Version: v0.12.0-102-g9f41f53c
+Rollback Commit: 795ce490a05b2ebae724cff634317f38bc38d721
+Rollback Branch: master
+Rollback Version: v0.12.0-13-g795ce490
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Repo Warnings:
+  Repo has untracked source files: ['klippy/extras/gcode_shell_command.py']
+2024-01-29 17:02:39,823 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
+2024-01-29 17:02:39,823 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
+2024-01-29 17:02:41,098 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config status --porcelain -b) successfully finished
+2024-01-29 17:02:41,105 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config branch --list --no-color) successfully finished
+2024-01-29 17:02:41,111 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config remote get-url origin) successfully finished
+2024-01-29 17:02:41,780 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config fetch origin --prune --progress) successfully finished
+2024-01-29 17:02:41,786 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-01-29 17:02:41,791 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config rev-parse HEAD) successfully finished
+2024-01-29 17:02:41,798 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:02:41,801 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config rev-parse origin/master) successfully finished
+2024-01-29 17:02:41,807 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:02:41,811 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config rev-list HEAD..e57810d51b5c634aadaca4db923bfcba269ae4b3 --count) successfully finished
+2024-01-29 17:02:41,819 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config log 76a9999986b03abb3aed272dc0a818f13a18ea7e..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-01-29 17:02:41,826 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-01-29 17:02:41,826 [git_deploy.py:log_repo_info()] - Git Repo mainsail-config Detected:
+Owner: mainsail-crew
+Repository Name: mainsail-config
+Path: /home/juani/mainsail-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/mainsail-config.git
+Recovery URL: https://github.com/mainsail-crew/mainsail-config.git
+Current Commit SHA: 76a9999986b03abb3aed272dc0a818f13a18ea7e
+Upstream Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Current Version: v1.1.0-1-g76a99999
+Upstream Version: v1.2.1-0-ge57810d5
+Rollback Commit: 76a9999986b03abb3aed272dc0a818f13a18ea7e
+Rollback Branch: master
+Rollback Version: v1.1.0-1-g76a99999
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 1
+Diverged: False
+2024-01-29 17:02:41,826 [base_deploy.py:log_info()] - Git Repo mainsail-config: Channel: dev
+2024-01-29 17:02:41,826 [base_deploy.py:log_info()] - Git Repo mainsail-config: Validity check for git repo passed
+2024-01-29 17:02:42,229 [base_deploy.py:log_info()] - Web Client mainsail: Detected
+Repo: mainsail-crew/mainsail
+Channel: stable
+Path: /home/juani/mainsail
+Local Version: v2.9.1
+Remote Version: v2.9.1
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/mainsail-crew/mainsail/releases/download/v2.9.1/mainsail.zip
+Download Size: 2071443
+Content Type: application/zip
+Rollback Version: v2.8.0
+Rollback Repo: mainsail-crew/mainsail
+2024-01-29 17:02:44,288 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere status --porcelain -b) successfully finished
+2024-01-29 17:02:44,300 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere branch --list --no-color) successfully finished
+2024-01-29 17:02:44,309 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere remote get-url origin) successfully finished
+2024-01-29 17:02:46,347 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere fetch origin --prune --progress) successfully finished
+2024-01-29 17:02:46,354 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-01-29 17:02:46,359 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere rev-parse HEAD) successfully finished
+2024-01-29 17:02:46,370 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:02:46,453 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-01-29 17:02:46,463 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/octoeverywhere rev-list HEAD..2502dfeef5c633ca8beb498b72d4426c9bbcc3e4 --count) successfully finished
+2024-01-29 17:02:46,464 [git_deploy.py:log_repo_info()] - Git Repo octoeverywhere Detected:
+Owner: QuinnDamerell
+Repository Name: OctoPrint-OctoEverywhere
+Path: /home/juani/octoeverywhere
+Remote: origin
+Branch: master
+Remote URL: https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere.git
+Recovery URL: https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere.git
+Current Commit SHA: 2502dfeef5c633ca8beb498b72d4426c9bbcc3e4
+Upstream Commit SHA: 2502dfeef5c633ca8beb498b72d4426c9bbcc3e4
+Current Version: 2.10.7-0-g2502dfee
+Upstream Version: 2.10.7
+Rollback Commit: 531a894c90ae7f5dbe60e19efe17175fa6e63019
+Rollback Branch: master
+Rollback Version: 2.10.0-0-g531a894c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-01-29 17:02:46,465 [base_deploy.py:log_info()] - Git Repo octoeverywhere: Channel: beta
+2024-01-29 17:02:46,465 [base_deploy.py:log_info()] - Git Repo octoeverywhere: Validity check for git repo passed
+2024-01-29 17:02:47,465 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion status --porcelain -b) successfully finished
+2024-01-29 17:02:47,474 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion branch --list --no-color) successfully finished
+2024-01-29 17:02:47,481 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion remote get-url origin) successfully finished
+2024-01-29 17:02:48,319 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion fetch origin --prune --progress) successfully finished
+2024-01-29 17:02:48,327 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-01-29 17:02:48,331 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion rev-parse HEAD) successfully finished
+2024-01-29 17:02:48,387 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:02:48,392 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion rev-parse origin/main) successfully finished
+2024-01-29 17:02:48,398 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:02:48,405 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mobileraker_companion rev-list HEAD..7297fbcaa7ed724eb431605f3a5f28879f010b38 --count) successfully finished
+2024-01-29 17:02:48,405 [git_deploy.py:log_repo_info()] - Git Repo mobileraker Detected:
+Owner: Clon1998
+Repository Name: mobileraker_companion
+Path: /home/juani/mobileraker_companion
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Clon1998/mobileraker_companion.git
+Recovery URL: https://github.com/Clon1998/mobileraker_companion.git
+Current Commit SHA: 7297fbcaa7ed724eb431605f3a5f28879f010b38
+Upstream Commit SHA: 7297fbcaa7ed724eb431605f3a5f28879f010b38
+Current Version: v0.4.0-41-g7297fbca
+Upstream Version: v0.4.0-41-g7297fbca
+Rollback Commit: 81ae9a04fca856969c2330721d2effac9014625a
+Rollback Branch: main
+Rollback Version: v0.4.0-31-g81ae9a04
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-01-29 17:02:48,405 [base_deploy.py:log_info()] - Git Repo mobileraker: Channel: dev
+2024-01-29 17:02:48,405 [base_deploy.py:log_info()] - Git Repo mobileraker: Validity check for git repo passed
+2024-01-29 17:02:49,007 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging status --porcelain -b) successfully finished
+2024-01-29 17:02:49,019 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging branch --list --no-color) successfully finished
+2024-01-29 17:02:49,027 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging remote get-url origin) successfully finished
+2024-01-29 17:02:50,059 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging fetch origin --prune --progress) successfully finished
+2024-01-29 17:02:50,066 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-01-29 17:02:50,074 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging rev-parse HEAD) successfully finished
+2024-01-29 17:02:50,210 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:02:50,219 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging rev-parse origin/main) successfully finished
+2024-01-29 17:02:50,226 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:02:50,231 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging rev-list HEAD..c58f3d31adb16eaf963b84cb35c8ca72cc736245 --count) successfully finished
+2024-01-29 17:02:50,236 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging log 3eca87b784895ec7d8679f5dae56f1ffa975552b..origin/main --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-01-29 17:02:50,244 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/main --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-01-29 17:02:50,245 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/juani/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: 3eca87b784895ec7d8679f5dae56f1ffa975552b
+Upstream Commit SHA: c58f3d31adb16eaf963b84cb35c8ca72cc736245
+Current Version: v1.1.2-7-g3eca87b7
+Upstream Version: v1.1.2-8-gc58f3d31
+Rollback Commit: 3eca87b784895ec7d8679f5dae56f1ffa975552b
+Rollback Branch: main
+Rollback Version: v1.1.2-7-g3eca87b7
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 1
+Diverged: False
+2024-01-29 17:02:50,245 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Channel: dev
+2024-01-29 17:02:50,245 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Validity check for git repo passed
+2024-01-29 17:02:51,250 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest status --porcelain -b) successfully finished
+2024-01-29 17:02:51,262 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest branch --list --no-color) successfully finished
+2024-01-29 17:02:51,269 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest remote get-url origin) successfully finished
+2024-01-29 17:02:51,998 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest fetch origin --prune --progress) successfully finished
+2024-01-29 17:02:52,003 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-01-29 17:02:52,006 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest rev-parse HEAD) successfully finished
+2024-01-29 17:02:52,164 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:02:52,167 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest rev-parse origin/master) successfully finished
+2024-01-29 17:02:52,174 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:02:52,178 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/crowsnest rev-list HEAD..c0c9c418c8e7d6158bfd7bb51a184ab20b77d075 --count) successfully finished
+2024-01-29 17:02:52,178 [git_deploy.py:log_repo_info()] - Git Repo crowsnest Detected:
+Owner: mainsail-crew
+Repository Name: crowsnest
+Path: /home/juani/crowsnest
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/crowsnest.git
+Recovery URL: https://github.com/mainsail-crew/crowsnest.git
+Current Commit SHA: c0c9c418c8e7d6158bfd7bb51a184ab20b77d075
+Upstream Commit SHA: c0c9c418c8e7d6158bfd7bb51a184ab20b77d075
+Current Version: v4.1.3-1-gc0c9c418
+Upstream Version: v4.1.3-1-gc0c9c418
+Rollback Commit: 380c1776207bc8d69f18daa651413e01fb879c74
+Rollback Branch: master
+Rollback Version: v4.1.0-1-g380c1776
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-01-29 17:02:52,178 [base_deploy.py:log_info()] - Git Repo crowsnest: Channel: dev
+2024-01-29 17:02:52,178 [base_deploy.py:log_info()] - Git Repo crowsnest: Validity check for git repo passed
+2024-01-29 17:03:03,762 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging fetch origin --prune --progress) successfully finished
+2024-01-29 17:03:03,773 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-01-29 17:03:04,648 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging pull --progress) successfully finished
+2024-01-29 17:03:04,658 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging status --porcelain -b) successfully finished
+2024-01-29 17:03:04,673 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging branch --list --no-color) successfully finished
+2024-01-29 17:03:04,691 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging remote get-url origin) successfully finished
+2024-01-29 17:03:04,695 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-01-29 17:03:04,699 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging rev-parse HEAD) successfully finished
+2024-01-29 17:03:04,706 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:03:04,710 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging rev-parse origin/main) successfully finished
+2024-01-29 17:03:04,717 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:03:04,722 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/Klipper-Adaptive-Meshing-Purging rev-list HEAD..c58f3d31adb16eaf963b84cb35c8ca72cc736245 --count) successfully finished
+2024-01-29 17:03:04,723 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/juani/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: c58f3d31adb16eaf963b84cb35c8ca72cc736245
+Upstream Commit SHA: c58f3d31adb16eaf963b84cb35c8ca72cc736245
+Current Version: v1.1.2-8-gc58f3d31
+Upstream Version: v1.1.2-8-gc58f3d31
+Rollback Commit: 3eca87b784895ec7d8679f5dae56f1ffa975552b
+Rollback Branch: main
+Rollback Version: v1.1.2-7-g3eca87b7
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-01-29 17:03:04,723 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Channel: dev
+2024-01-29 17:03:04,723 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Validity check for git repo passed
+2024-01-29 17:03:04,926 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-01-29 17:03:05,088 [websockets.py:on_close()] - Websocket Closed: ID: 140675297413680 Close Code: 1000, Close Reason: None, Pong Time Elapsed: 3.61
+2024-01-29 17:03:07,100 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 0.83ms
+2024-01-29 17:03:07,100 [websockets.py:open()] - Websocket Opened: ID: 140675297418816, Proxied: False, User Agent: , Host Name: 0.0.0.0
+2024-01-29 17:03:07,104 [websockets.py:_handle_identify()] - Websocket 140675297418816 Client Identified - Name: OctoEverywhere, Version: 2.10.7, Type: agent
+2024-01-29 17:03:07,400 [websockets.py:on_close()] - Websocket Closed: ID: 140675297418816 Close Code: 1000, Close Reason: None, Pong Time Elapsed: 0.30
+2024-01-29 17:03:08,448 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-01-29 17:03:08,564 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', 'basic.target', '-.mount', 'systemd-journald.socket', 'sysinit.target', 'network-online.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/juani/printer_data/systemd/klipper.env
+**ExecStart=/home/juani/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/juani/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=juani
+2024-01-29 17:03:12,530 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-01-29 17:03:12,531 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-01-29 17:03:12,782 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-01-29 17:03:13,039 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-01-29 17:03:13,536 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-01-29 17:03:20,817 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config fetch origin --prune --progress) successfully finished
+2024-01-29 17:03:20,828 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-01-29 17:03:21,639 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config pull --progress) successfully finished
+2024-01-29 17:03:21,646 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config status --porcelain -b) successfully finished
+2024-01-29 17:03:21,655 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config branch --list --no-color) successfully finished
+2024-01-29 17:03:21,662 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config remote get-url origin) successfully finished
+2024-01-29 17:03:21,667 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-01-29 17:03:21,674 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config rev-parse HEAD) successfully finished
+2024-01-29 17:03:21,680 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-01-29 17:03:21,685 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config rev-parse origin/master) successfully finished
+2024-01-29 17:03:21,690 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-01-29 17:03:21,695 [shell_command.py:_check_proc_success()] - Command (git -C /home/juani/mainsail-config rev-list HEAD..e57810d51b5c634aadaca4db923bfcba269ae4b3 --count) successfully finished
+2024-01-29 17:03:21,696 [git_deploy.py:log_repo_info()] - Git Repo mainsail-config Detected:
+Owner: mainsail-crew
+Repository Name: mainsail-config
+Path: /home/juani/mainsail-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/mainsail-config.git
+Recovery URL: https://github.com/mainsail-crew/mainsail-config.git
+Current Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Upstream Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Current Version: v1.2.1-0-ge57810d5
+Upstream Version: v1.2.1-0-ge57810d5
+Rollback Commit: 76a9999986b03abb3aed272dc0a818f13a18ea7e
+Rollback Branch: master
+Rollback Version: v1.1.0-1-g76a99999
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-01-29 17:03:21,696 [base_deploy.py:log_info()] - Git Repo mainsail-config: Channel: dev
+2024-01-29 17:03:21,696 [base_deploy.py:log_info()] - Git Repo mainsail-config: Validity check for git repo passed
+2024-01-29 17:03:21,718 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-01-29 17:03:22,265 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-01-29 17:03:25,321 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-01-29 17:03:25,322 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-01-29 17:03:25,573 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-01-29 17:03:25,832 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-01-29 17:03:26,325 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-01-29 17:03:29,422 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 0.91ms
+2024-01-29 17:03:29,422 [websockets.py:open()] - Websocket Opened: ID: 140675279983936, Proxied: False, User Agent: , Host Name: 0.0.0.0
+2024-01-29 17:03:29,426 [websockets.py:_handle_identify()] - Websocket 140675279983936 Client Identified - Name: OctoEverywhere, Version: 2.10.7, Type: agent
+2024-01-29 17:11:22,032 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.100.89
+2024-01-29 17:11:36,238 [application.py:prepare()] - Upload Request Received from 192.168.100.89
+Content-Type: multipart/form-data; boundary=------------------------11eb3de2ecc1b235
+2024-01-29 17:11:36,761 [application.py:post()] - Processing Uploaded File: REMIX_-_20-15mm_rounded_edge_12m.gcode
+2024-01-29 17:11:39,232 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-01-29 17:11:39,242 [shell_command.py:pipe_data_received()] - INFO:metadata:File 'REMIX_-_20-15mm_rounded_edge_12m.gcode' currently supports cancellation, processing aborted
+
+2024-01-29 17:11:39,343 [shell_command.py:_check_proc_success()] - Command (/home/juani/moonraker-env/bin/python /home/juani/moonraker/moonraker/components/file_manager/metadata.py -p /home/juani/printer_data/gcodes -f "REMIX_-_20-15mm_rounded_edge_12m.gcode" --check-objects) successfully finished
+2024-01-29 17:11:39,392 [application.py:log_request()] - 201 POST /api/files/local (192.168.100.89) [_TRUSTED_USER_] 3153.61ms
+2024-01-29 17:12:07,378 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 2.43ms
+2024-01-29 17:12:07,378 [websockets.py:open()] - Websocket Opened: ID: 140675279892064, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:12:08,286 [websockets.py:_handle_identify()] - Websocket 140675279892064 Client Identified - Name: OctoEverywhere-BrowserAgent, Version: 1.0.0, Type: web
+2024-01-29 17:12:08,537 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 0.75ms
+2024-01-29 17:12:08,537 [websockets.py:open()] - Websocket Opened: ID: 140675279340496, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:12:08,878 [websockets.py:_handle_identify()] - Websocket 140675279340496 Client Identified - Name: mainsail, Version: 2.9.1, Type: web
+2024-01-29 17:12:16,021 [websockets.py:on_close()] - Websocket Closed: ID: 140675279892064 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.65
+2024-01-29 17:12:16,021 [websockets.py:on_close()] - Websocket Closed: ID: 140675279340496 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.49
+2024-01-29 17:12:17,114 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 1.10ms
+2024-01-29 17:12:17,114 [websockets.py:open()] - Websocket Opened: ID: 140675297342464, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:12:17,138 [websockets.py:_handle_identify()] - Websocket 140675297342464 Client Identified - Name: OctoEverywhere-BrowserAgent, Version: 1.0.0, Type: web
+2024-01-29 17:12:18,408 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 0.80ms
+2024-01-29 17:12:18,408 [websockets.py:open()] - Websocket Opened: ID: 140675298767728, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:12:18,509 [websockets.py:_handle_identify()] - Websocket 140675298767728 Client Identified - Name: mainsail, Version: 2.9.1, Type: web
+2024-01-29 17:12:41,262 [websockets.py:on_close()] - Websocket Closed: ID: 140675298767728 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.83
+2024-01-29 17:12:41,263 [websockets.py:on_close()] - Websocket Closed: ID: 140675297342464 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.08
+2024-01-29 17:12:47,414 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 0.99ms
+2024-01-29 17:12:47,414 [websockets.py:open()] - Websocket Opened: ID: 140675298767968, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:12:47,718 [websockets.py:_handle_identify()] - Websocket 140675298767968 Client Identified - Name: OctoEverywhere-BrowserAgent, Version: 1.0.0, Type: web
+2024-01-29 17:12:48,484 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 0.80ms
+2024-01-29 17:12:48,484 [websockets.py:open()] - Websocket Opened: ID: 140675298767536, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:12:48,555 [websockets.py:_handle_identify()] - Websocket 140675298767536 Client Identified - Name: mainsail, Version: 2.9.1, Type: web
+2024-01-29 17:13:08,795 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 0.83ms
+2024-01-29 17:13:08,796 [websockets.py:open()] - Websocket Opened: ID: 140675298767584, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:13:08,813 [websockets.py:_handle_identify()] - Websocket 140675298767584 Client Identified - Name: OctoEverywhere-BrowserAgent, Version: 1.0.0, Type: web
+2024-01-29 17:13:09,771 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 4.34ms
+2024-01-29 17:13:09,772 [websockets.py:open()] - Websocket Opened: ID: 140675298759136, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:13:09,774 [application.py:log_request()] - 101 GET /websocket (192.168.100.89) [_TRUSTED_USER_] 5.28ms
+2024-01-29 17:13:09,774 [websockets.py:open()] - Websocket Opened: ID: 140675298761632, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:13:09,780 [websockets.py:on_close()] - Websocket Closed: ID: 140675298759136 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.01
+2024-01-29 17:13:09,795 [websockets.py:on_close()] - Websocket Closed: ID: 140675298761632 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.03
+2024-01-29 17:13:10,370 [application.py:log_request()] - 101 GET /websocket?token=XURAOLRS3UMKKCYRELHQYGSPM7DHXBVY (192.168.100.89) [_TRUSTED_USER_] 0.73ms
+2024-01-29 17:13:10,370 [websockets.py:open()] - Websocket Opened: ID: 140675298755344, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0, Host Name: 192.168.100.42
+2024-01-29 17:13:10,388 [websockets.py:_handle_identify()] - Websocket 140675298755344 Client Identified - Name: fluidd, Version: 1.27.1-2056453, Type: web
+2024-01-29 17:13:10,388 [file_manager.py:get_file_list()] - Updating File List <config>...
