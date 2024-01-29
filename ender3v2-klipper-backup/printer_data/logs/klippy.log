@@ -5294,3 +5294,89 @@ cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backu
 
 cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/config/.theme/.git/objects/pack/pack-e865154726d06f46bab329ac6df1edf37ac82803.idx': Permiso denegado
 
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/pack/pack-bb61737bffe11bbe9bebde7f03c3bb991f38fd46.pack': Permiso denegado
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/pack/pack-bb61737bffe11bbe9bebde7f03c3bb991f38fd46.idx': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/eb/127891d24817b4624ded36da1250039591484d': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/c3/0c35cef7fc4b529ec1fd10359fcea9fc13905f': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/04/5a8a30d0ddcfcc8b945b93a8a35f2a4285634b': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/a7/84f4ad6abd854c1493a9afa29f5a4c959a5627': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/62/773a19b59dea7f3592c0cdc35f311465917cf0': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/ac/2c498d6185097d2a4064f4303a2e15c97add6b': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/a8/8d7e372bcdfd416ce2fd097ac14c6b5a237aec': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/d0/3c61f0278ff38243ae32f8d8ee78ca6232be54': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/31/87e8295ed0bdac7c5213395e9fe05037d1c6fa': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/63/83b965d6d264567b72fa66fa6b7044a9123015': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/1e/e661d0f23473a8c8e0bd28f476f89e137b1154': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/01/d641721913d6b0283869c33d574f55042d81ed': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/9f/362f1d37d565a6a52de23b859dcf5cf9eff44f': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/07/e9fb28755f635d7edeb0bcef87ca11e589ffa1': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/93/effa4b50fdb784ec23d4c0789a72e406feac89': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/54/97f42cd0c87f77811a741d259a149bb4e03e59': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/96/1be39ded00137c24292afa41380452297edb0f': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/2b/a33214ee46bed4472bae6d37effc23dce61359': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/71/ffdff6251954e861b3ecc9487196829be8aff8': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/65/9095b82f6ed3db4e18a72a03f0e817d790f727': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/38/d9a1acb1552f8b905d257a69f38b493e5bffaa': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/49/a425974e7217c77f70efd97f3742a7c39af5f1': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/90/fdf78ba4e9f7e66c8c001fa01e93b5904c3857': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/40/3a9ec68861c41b52ce9012d195655a4f41b887': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/klipper-backup/.git/objects/89/590bc9a6b22bc4a16818c6c6afdbe6942f2817': Permiso denegado
+
+cp: no se puede copiar un directorio, '/home/juani/printer_data/', dentro de sí mismo, '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data'
+
+Reinicializado el repositorio Git existente en /home/juani/printer_data/klipper-backup/.git/
+
+WARNING: git-filter-branch has a glut of gotchas generating mangled history
+	 rewrites.  Hit Ctrl-C before proceeding to abort, then use an
+	 alternative filtering tool such as 'git filter-repo'
+	 (https://github.com/newren/git-filter-repo/) instead.  See the
+	 filter-branch manual page for more details; to squelch this warning,
+	 set FILTER_BRANCH_SQUELCH_WARNING=1.
+
+Proceeding with filter-branch...
+
+
+No se puede reescribir las ramas: Tienes cambios que no están en el área de stage.
+
+[main 31c5ee7] New backup from 29-01-24
+ 11 files changed, 49239 insertions(+), 2 deletions(-)
+ rewrite ender3v2-klipper-backup/printer_data/database/data.mdb (62%)
+ create mode 100644 ender3v2-klipper-backup/printer_data/gcodes/.thumbs/REMIX_-_20-15mm_rounded_edge_12m-300x300.png
+ create mode 100644 ender3v2-klipper-backup/printer_data/gcodes/.thumbs/REMIX_-_20-15mm_rounded_edge_12m-32x32.png
+ create mode 100644 ender3v2-klipper-backup/printer_data/gcodes/REMIX_-_20-15mm_rounded_edge_12m.gcode
+
+To https://github.com/jlarrainf/ender3v2-klipper-backup.git
+ + cf0309f...31c5ee7 main -> main (forced update)
+
+Command {update_git_script} finished
+
+Running Command {update_git_script}...:
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/config/.theme/.git/objects/pack/pack-e865154726d06f46bab329ac6df1edf37ac82803.pack': Permiso denegado
+
+cp: no se puede crear el fichero regular '/home/juani/printer_data/klipper-backup/ender3v2-klipper-backup/printer_data/config/.theme/.git/objects/pack/pack-e865154726d06f46bab329ac6df1edf37ac82803.idx': Permiso denegado
+
